@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>rie.charge | Cold-Pressed Juice, Fitshot, dan Asinan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="asset/icon.ico">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="styledesign.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navbar start -->
+        <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 50px; width: auto;" class="align-items-center"> 
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link ">Beranda</a>
+                            <a href="katalog.html" class="nav-item nav-link active">Katalog</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Artikel</a>
+                            <a href="testimonial.html" class="nav-item nav-link">Testimoni</a>
+                            <a href="contact.html" class="nav-item nav-link">Tentang</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-3" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(asset/cart-page-header-img.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; margin-top: 0 !important;">
+    <h1 class="text-center text-white display-6">Katalog</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active text-white">Katalog</li>
+    </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <!-- Fruits Shop Start-->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <h1 class="mb-4">Produk Sehat Berkualitas</h1>
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-xl-3">
+                                <div class="input-group w-100 mx-auto d-flex">
+                                    <input type="search" class="form-control p-3" placeholder="Cari Produk" aria-describedby="search-icon-1">
+                                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-xl-3">
+                                <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                                    <label for="fruits">Urutkan:</label>
+                                    <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
+                                        <option value="volvo">Tidak Ada</option>
+                                        <option value="saab">Terlaris</option>
+                                        <option value="opel">Terbaru</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-3">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <h4>Kategori</h4>
+                                            <ul class="list-unstyled fruite-categorie">
+                                                <li>
+                                                    <div class="d-flex justify-content-between fruite-name">
+                                                        <a href="#">Cold-Pressed Juice</a>
+                                                        <span>(7)</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex justify-content-between fruite-name">
+                                                        <a href="#">Fitshot</a>
+                                                        <span>(4)</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex justify-content-between fruite-name">
+                                                        <a href="#">Asinan/Rujak</a>
+                                                        <span>(3)</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex justify-content-between fruite-name">
+                                                        <a href="#">Hampers</a>
+                                                        <span>(3)</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex justify-content-between fruite-name">
+                                                        <a href="#">Lainnya</a>
+                                                        <span>(1)</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h4 class="mb-3">Produk Unggulan</h4>
+                                        <div class="d-flex align-items-center justify-content-start mb-3">
+                                            <div class="rounded me-4 " >
+                                                <img src="asset/orangesunset.jpg" class="img-fluid rounded" alt="" style="width: 125px; height: 125px;object-fit: cover;">
+                                            </div>
+                                            <div>
+                                                <a href="detail.html?id=orangesunset"><h6 class="mb-2">Orange Sunset</h6></a>
+                                                <div class="d-flex mb-2">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <h5 class="fw-bold me-2">Rp. 25.000,00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-start mb-3">
+                                            <div class="rounded me-4">
+                                                <img src="asset/redmoon.jpg" class="img-fluid rounded" alt="" style="width: 125px; height: 125px;object-fit: cover;">
+                                            </div>
+                                            <div>
+                                                <a href="detail.html?id=redmoon"><h6 class="mb-2">Red Moon</h6></a>
+                                                <div class="d-flex mb-2">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <h5 class="fw-bold me-2">Rp. 25.000,00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="rounded me-4 ">
+                                                <img src="asset/FitShot/Fitshot red beet.jpg" class="img-fluid rounded" alt="" style="width: 125px; height: 125px;object-fit: cover;">
+                                            </div>
+                                            <div>
+                                                <a href="detail.html?id=redbeetshot"><h6 class="mb-2">Fitshot Red Beet</h6></a>
+                                                <div class="d-flex mb-2">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <h5 class="fw-bold me-2">Rp. 25.000</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="position-relative">
+                                            <img src="asset/judul2.png" class="img-fluid w-100 rounded" alt="">
+                                            <div class="position-absolute" style="top: 50%; right: 10px; ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row g-4 justify-content-center" id="product-list">
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/orangesunset.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cold-Pressed Juice</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <a href="detail.html?id=orangesunset"><h4>Orange Sunset</h4></a>
+                                                <p>Perpaduan wortel, nanas, pir, timun, dan lemon menghadirkan kesegaran alami dan menyehatkan.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp25.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=orangesunset" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cold-Pressed Juice</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Red Moon</h4>
+                                                <p>Perpaduan kaya antioksidan dari apel, beetroot, wortel, lemon, dan jahe.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp25.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=redmoon" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/FitShot/Fitshot red beet.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fitshot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Red Beet</h4>
+                                                <p>Shot bit, jahe, kencur, apel, jeruk nipis, dan lemon untuk dorongan cepat menjaga imun tubuh.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp50.000/<small class="text-muted">4pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=redbeetshot" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/Cold pressed juice/Celery quake.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cold-Pressed Juice</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Celery Quake</h4>
+                                                <p>Perpaduan celery stick, apel, nanas, lemon, dan jahe untuk tekanan darah dan kolesterol.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp25.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=celeryquake" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/FitShot/Fitshot Green Calory.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fitshot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Green Celery</h4>
+                                                <p>Shot kale, seledri, apel, nanas, lemon, dan jahe untuk dorongan cepat menjaga imun tubuh.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp50.000/<small class="text-muted">4pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=greenceleryshot" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/orangecarrot.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fitshot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Orange Carrot</h4>
+                                                <p>Shot wortel, sunkist, timun, kunyit, lemon, dan lada hitam untuk dorongan cepat menjaga imun tubuh.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp50.000/<small class="text-muted">4pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=orangecarrotshot" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/Fitshot yellow turmenic.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fitshot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Yellow Turmeric</h4>
+                                                <p>Shot kunyit, jahe, buah, dan rempah untuk dorongan cepat menjaga imun tubuh dari gejala flu.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp50.000/<small class="text-muted">4pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=yellowturmeric" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/asinankuahlemon.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Asinan/Rujak</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Kuah Lemon</h4>
+                                                <p>Campuran buah-buahan segar dengan kuah kental jus mangga kweni yang telah dibumbui.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp40.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=asinanbuahkuahlemon" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/kiamboysonkit.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Asinan/Rujak</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Kuah Kiamboy Sonkit</h4>
+                                                <p>Campuran buah-buahan segar dengan kuah putih khas manisan kiamboy dan kesegaran jeruk sonkit.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp40.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=asinankiamboysonkit" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="asset/kiamboysonkit.jpg" class="img-fluid w-100 rounded-top" alt=""  style="height: 200px;object-fit: cover;">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Asinan/Rujak</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Kuah Kiamboy Sonkit</h4>
+                                                <p>Campuran buah-buahan segar dengan kuah putih khas manisan kiamboy dan kesegaran jeruk sonkit.</p>
+                                                <p class="text-dark fs-5 fw-bold mb-0">Rp40.000/<small class="text-muted">pcs</small></p>
+                                                <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=asinankiamboysonkit" class="btn btn-sm border-secondary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="pagination" class="pagination d-flex justify-content-center mt-5">
+                                        <a href="#" id="prev" class="rounded">&laquo;</a>
+                                        <a href="#" class="active rounded">1</a>
+                                        <a href="#" class="rounded">2</a>
+                                        <a href="#" class="rounded">3</a>
+                                        <a href="#" class="rounded">4</a>
+                                        <a href="#" class="rounded">5</a>
+                                        <a href="#" class="rounded">6</a>
+                                        <a href="#" id="next" class="rounded">&raquo;</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fruits Shop End-->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 60px; width: auto;" class="align-items-center">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <p class="mb-4">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Lihat Lagi</h4>
+                            <a class="btn-link" href="">Blog</a>
+                            <a class="btn-link" href="">Testimoni</a>
+                            <a class="btn-link" href="">Tentang Kami</a>
+                            <a class="btn-link" href="">Katalog</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Shop details</a>
+                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Order History</a>
+                            <a class="btn-link" href="">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Kontak</h4>
+                            <p>Alamat: Perumahan Alam Tirta Lestari, Ciomas, Bogor</p>
+                            <p>Email: Riecharge@bussiness.id</p>
+                            <p>Telepon: 0878-7257-2592</p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="main.js"></script>
+    </body>
+
+</html>

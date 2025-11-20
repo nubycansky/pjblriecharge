@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>rie.charge | Cold-Pressed Juice, Fitshot, dan Asinan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="asset/icon.ico">
+
+         <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="styledesign.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <!-- Spinner Start -->
+        <!-- <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div> -->
+        <!-- Spinner End -->
+
+        <!--Navigation Bar-->
+        <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 50px; width: auto;" class="align-items-center"> 
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                            <a href="katalog.html" class="nav-item nav-link">Katalog</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Artikel</a>
+                            <a href="testimonial.html" class="nav-item nav-link">Testimoni</a>
+                            <a href="contact.html" class="nav-item nav-link">Tentang</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+
+        <!-- Search Engine -->
+        
+        <!--Hero-->
+        <div class="container-fluid py-3 mb-5">
+            <div class="container py-3">
+                <div class="row g-5 align-items-center"> 
+                    <div class="col-md-12 col-lg-7" data-aos="fade-up"> 
+                        <h1 class="mb-3 text-secondary mt-0">Produk Kesehatan Alami</h1>
+                        <h1 class="mb-3 display-3 text-primary">Untuk Keluarga Anda</h1>
+                        <p class="mb-4"> Rie.charge menyediakan produk sehat dan berkualitas dengan bahan alami pilihan. Dibuat dengan cinta untuk menjaga kesehatan keluarga Indonesia.</p>
+                
+                        <div class="d-flex mt-4">
+                            <a href="katalog.html"><button class="btn btn-primary py-3 px-5 me-3 fw-bold text-white">Belanja Sekarang</button></a>
+                            <button class="btn btn-secondary py-3 px-5 fw-bold">Tentang Kami</button>
+                        </div>
+                
+                        <div class="row mt-3 pt-3 justify-content-between"> 
+                            <div class="col-auto d-flex align-items-center">
+                                <i class="fas fa-leaf fa-lg me-2" style="color: #6c757d;"></i>
+                                <span class="fw-bold" style="color: #333;">100% Alami</span>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <i class="fas fa-heart fa-lg me-2" style="color: #6c757d;"></i>
+                                <span class="fw-bold" style="color: #333;">Dibuat dengan Cinta</span>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <i class="fas fa-shield-alt fa-lg me-2" style="color: #6c757d;"></i>
+                                <span class="fw-bold" style="color: #333;">Kualitas Terjamin</span>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="col-md-12 col-lg-5">
+                        <img src="asset/juicecircle2.jpg"
+                        class="img-fluid w-100 rounded"
+                        alt="Produk Jus rie.charge"
+                        style="max-height: 410px; object-fit: cover;"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tentang Produk Kami -->
+         <div class="container fruite py-3">
+            <div class="container py-3">
+                <div class="tab-class text-center">
+                    <h1>Tentang Produk Kami</h1>
+                    <h6 class="mb-2">Produk-Produk yang kami tawarkan </h6>
+                </div>
+            </div>
+
+            <div class="vesitable">
+                    <div class="owl-carousel vegetable-carousel justify-content-center">
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="asset/juicecircle.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4 style="text-align: center;">Cold-Pressed Juice</h4>
+                                <p style="text-align: center;">Jus yang dibuat dengan metode pengepresan tanpa panas, sehingga vitamin, mineral, dan enzim alami buah serta sayuran tetap terjaga. Rasanya lebih segar, bernutrisi tinggi, dan baik untuk detoks, meningkatkan energi, serta menjaga kesehatan tubuh secara alami.</p>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="asset/allfitshot.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4 style="text-align: center;">Fitshot</h4>
+                                <p style="text-align: center;"> Fitshot (wellness shot) merupakan minuman 100% sari rempah, buah dan sayur dalam ukuran botol kecil
+ untuk sekali minum, dengan cita rasa yang kuat, yang bermanfaat untuk memberikan dorongan cepat dalam
+ menjaga imun agar tetap fit selama perubahan cuaca yang tidak menentu.</p>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="asset/asinankuahlemon.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4 style="text-align: center;">Asinan</h4>
+                                <p style="text-align: center;">Asinan Rie.charge adalah camilan segar yang nagih, berisi aneka buah-buahan premium (mangga, anggur, salak, dll.) yang full vitamin. Tersedia dalam dua pilihan kuah khas: pedas-asam dari cabai dan sari lemon impor, atau manis-asam-asin dari kuah kiamboy sonkit yang unik.</p>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="asset/Rujak/rujak.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4 style="text-align: center;">Rujak</h4>
+                                <p style="text-align: center;">Campuran buah buahan
+ (mangga (musiman),
+ kedondong, pepaya,
+ belimbing, bengkoang,
+ jambu citra, nanas) dan
+ manisan kolang kaling
+ telang, dipadu dengan
+ kuah kental jus mangga
+ kweni yang telah
+ dibumbui.</p>
+                            </div>
+                        </div>
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="asset/ximilu.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;object-fit: cover;">
+                            </div>
+                            <div class="p-4 pb-0 rounded-bottom">
+                                <h4 style="text-align: center;"> Ximilu </h4>
+                                <p style="text-align: center;">Ximilu adalah dessert segar ala Hong Kong yang bebas laktosa dan tetap creamy berkat FiberCreme. Kaya serat, vitamin, dan aman untuk diet, Ximilu berisi aneka buah premium, agar-agar, dan chiaseed. Penyegar yang sempurna untuk pencernaan sehat!</p>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produk Unggulan -->
+
+        <div class="container fruite py-3">
+            <div class="container py-3">
+                <div class="tab-class text-center">
+                    <h1>Produk Unggulan Kami</h1>
+                    <h6 class="mb-2">Pilihan produk terbaik dari rie.charge</h6>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                        <div id="produk unggulan" class="tab-pane fade show p-2 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="detail.html?id=orangesunset"><img src="asset/orangesunset.jpg" class="img-fluid w-100 rounded-top" style="height: 225px; object-fit: cover; object-position: 50% 60%;" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cold-Pressed Juice</div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; margin-bottom: 0;">Orange Sunset</h4>
+                                                    <p style="margin-top: 5px;">Perpaduan wortel, nanas, pir, timun, dan lemon menghadirkan kesegaran alami.</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 28.000,00</p>
+                                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=orangesunset" class="btn btn-sm border-primary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="detail.html?id=redmoon"><img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" style="height: 225px; object-fit: cover; object-position: 50% 60%;" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cold-Pressed Juice</div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; margin-bottom: 0;">Red Moon</h4>
+                                                    <p style="margin-top: 5px;">Perpaduan kaya antioksidan dari apel, beetroot, wortel, lemon, dan jahe.</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 28.000,00</p>
+                                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=redmoon" class="btn btn-sm border-primary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/FitShot/Fitshot red beet.jpg" class="img-fluid w-100 rounded-top" style="height: 225px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fitshot</div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; margin-bottom: 0;">Red Beet</h4>
+                                                    <p style="margin-top: 5px;">Shot bit, jahe, kencur, apel, jeruk nipis, dan lemon untuk dorongan cepat menjaga imun tubuh.</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp50.000/<small class="text-muted">4pcs</small></p>
+                                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=redbeetshot" class="btn btn-sm border-primary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/ximilu.jpg" class="img-fluid w-100 rounded-top" style="height: 225px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Lainnya</div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; margin-bottom: 0;">Ximilu</h4>
+                                                    <p style="margin-top: 5px;">Dessert ala Hong Kong, menggunakan FiberCreme untuk rasa creamy yang sehat dan kaya serat.</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 40.000,00</p>
+                                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                                        <a href="detail.html?id=ximilu" class="btn btn-sm border-primary text-dark fw-bold rounded-pill px-3 w-50 me-1">Detail</a>
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 w-50 ms-1 text-white fw-bold"><i class="fa fa-shopping-bag me-1"></i> Beli</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4 mb-5">
+                                            <a class="btn btn-sm btn-primary px-1 w-50 d-block mx-auto text-white fw-bold" href="katalog.html"> Lihat Lebih Banyak </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                        </div>
+
+            </div>
+        </div>
+
+        <div class="container fruite py-3">
+            <div class="container py-3">
+                <div class="tab-class text-center">
+                    <h1>Testimoni Pelanggan</h1>
+                    <h6 class="mb-2">Apa kata mereka tentang produk kami?</h6>
+                </div>
+            </div>
+        </div>
+
+         <div class="tab-content">
+                        <div id="testimoni" class="tab-pane fade show p-2 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                       <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item border border-primary">
+                                                <div class="p-4 rounded-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-secondary"></i> 
+                                                    </div>
+                                                    <p style="margin-top: 5px; text-align: justify;">"Produk Rie.charge sangat berkualitas dan membantu kesehatan keluarga saya. Sangat recommended! Keluarga saya jadi lebih sehat setelah rutin mengonsumsi produk dari Rie.charge."</p>
+                                                    
+                                                   <div class="d-flex align-items-center mt-3">
+                                                        <i class="fa fa-user-circle fa-2x text-muted me-3"></i> 
+                                                        <div>
+                                                            <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                                            <small class="text-muted">Bogor</small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4 mb-5">
+                                            <a href="testimonial.html" class="btn btn-sm btn-primary px-1 w-50 d-block mx-auto text-white fw-bold"> Lihat Lebih Banyak </a>
+                                        </div> 
+
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="container fruite py-3">
+            <div class="container py-3">
+                <div class="tab-class text-center">
+                    <h1>Kamu Mungkin Suka</h1>
+                    <h6 class="mb-2">Belajar lebih banyak dari artikel kami</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content">
+                        <div id="produk unggulan" class="tab-pane fade show p-2 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" style="height: 200px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; text-align: center; margin-bottom: 0;">Tips Menjaga Imun Tubuh</h4>
+                                                    <p style="margin-top: 5px; text-align: center;">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                                                    <div class="d-flex justify-content-center" style="margin-top: 5px;">
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 ms-1 text-white fw-bold"> Baca Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" style="height: 200px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; text-align: center; margin-bottom: 0;">Tips Menjaga Imun Tubuh</h4>
+                                                    <p style="margin-top: 5px; text-align: center;">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                                                    <div class="d-flex justify-content-center" style="margin-top: 5px;">
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 ms-1 text-white fw-bold"> Baca Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" style="height: 200px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; text-align: center; margin-bottom: 0;">Tips Menjaga Imun Tubuh</h4>
+                                                    <p style="margin-top: 5px; text-align: center;">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                                                    <div class="d-flex justify-content-center" style="margin-top: 5px;">
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 ms-1 text-white fw-bold"> Baca Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="asset/redmoon.jpg" class="img-fluid w-100 rounded-top" style="height: 200px; object-fit: cover; object-position: 50% 60%;" alt="">
+                                                </div>
+                                                <div class="p-4 border border-primary border-top-0 rounded-bottom">
+                                                    <h4 class="fw-bold" style="border-bottom: none !important; text-align: center; margin-bottom: 0;">Tips Menjaga Imun Tubuh</h4>
+                                                    <p style="margin-top: 5px; text-align: center;">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                                                    <div class="d-flex justify-content-center" style="margin-top: 5px;">
+                                                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-3 ms-1 text-white fw-bold"> Baca Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4 mb-5">
+                                            <a class="btn btn-sm btn-primary px-1 w-50 d-block mx-auto text-white fw-bold"> Lihat Lebih Banyak </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                        </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 60px; width: auto;" class="align-items-center">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <p class="mb-4">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Lihat Lagi</h4>
+                            <a class="btn-link" href="">Blog</a>
+                            <a class="btn-link" href="testimonial.html">Testimoni</a>
+                            <a class="btn-link" href="">Tentang Kami</a>
+                            <a class="btn-link" href="katalog.html">Katalog</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Shop details</a>
+                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Order History</a>
+                            <a class="btn-link" href="">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Kontak</h4>
+                            <p>Alamat: Perumahan Alam Tirta Lestari, Ciomas, Bogor</p>
+                            <p>Telepon: 0878-7257-2592</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="main.js"></script>
+    </body>
+
+
+
+    </body>
