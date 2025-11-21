@@ -518,6 +518,8 @@
     border-color: var(--bs-primary);
 }
 
+
+
 /* Efek hover */
 .pagination .page-item .page-link:hover {
     z-index: 2;
