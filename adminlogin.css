@@ -1,0 +1,165 @@
+/* =============================
+   LOGIN STYLE - ric.charge vibes
+   Fresh · Green · Rounded
+=============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(asset/hero.png); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    color: #2d3a2d;
+}
+
+/* Card */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    border: 1px solid #e4f3e7;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #256a2f;       /* darker green */
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #6a7f6e;
+}
+
+/* Floating Input */
+.input-wrapper {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 16px 10px;
+    border-radius: 12px;
+    border: 2px solid #d9eadf;
+    background: #ffffff;
+    font-size: 16px;
+    color: #30533a;
+    transition: .25s ease;
+}
+
+.input-wrapper input:focus {
+    border-color: #66bb35;
+}
+
+.input-wrapper input::placeholder {
+    color: transparent;
+}
+
+.input-wrapper label {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    color: #8ba693;
+    font-size: 15px;
+    pointer-events: none;
+    transition: .25s ease;
+}
+
+.input-wrapper input:focus + label,
+.input-wrapper input:valid + label,
+.input-wrapper input.has-value + label {
+    transform: translateY(-11px) scale(.85);
+    color: #66bb35;
+    font-weight: 600;
+}
+
+/* Password toggle */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 48px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6a7f6e;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: #66bb35;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s ease;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: #57a62d;
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+/* Forgot password */
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: -12px;
+    color: #66bb35;
+    font-size: 14px;
+    text-decoration: none;
+}
+.forgot-password:hover {
+    color: #4e8e27;
+}
+
+/* Error */
+.error-message {
+    color: #e63946;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 26px 22px;
+    }
+}

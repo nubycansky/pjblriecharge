@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>rie.charge | Cold-Pressed Juice, Fitshot, dan Asinan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="asset/icon.ico">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="styledesign.css" rel="stylesheet">
+    </head>
+    <body>
+         <!-- Navbar start -->
+        <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 50px; width: auto;" class="align-items-center"> 
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link ">Beranda</a>
+                            <a href="katalog.html" class="nav-item nav-link">Katalog</a>
+                            <a href="shop-detail.html" class="nav-item nav-link active">Artikel</a>
+                            <a href="testimonial.html" class="nav-item nav-link">Testimoni</a>
+                            <a href="tentangkami.html" class="nav-item nav-link">Tentang</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-3" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(asset/cart-page-header-img.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; margin-top: 0 !important;">
+            <h1 class="text-center text-white display-6">Artikel</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li class="breadcrumb-item active text-white">Artikel</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+        
+
+  
+
+  <div class="container">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb bg-transparent ps-0">
+        <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero rounded-2 mb-5">
+      <div class="container">
+        <h1>Blog Kesehatan</h1>
+        <p>Dapatkan informasi kesehatan terpercaya dan tips hidup sehat dari Rie.charge</p>
+      </div>
+    </header>
+
+    <!-- Search + Filters card -->
+    <div class="row justify-content-center search-bar">
+      <div class="col-12 col-lg-10">
+        <div class="search-card d-flex gap-3 align-items-center">
+          <div class="flex-grow-1">
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="fas fa-search"></i></span>
+              <input type="text" class="form-control" placeholder="Cari Artikel....">
+            </div>
+          </div>
+          <div style="min-width: 180px;">
+            <select class="form-select">
+              <option>Semua Kategori</option>
+              <option>Kesehatan</option>
+              <option>Nutrisi</option>
+            </select>
+          </div>
+          <div style="min-width: 140px;">
+            <select class="form-select">
+              <option>Terbaru</option>
+              <option>Terpopuler</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured article -->
+    <section class="mb-5">
+      <h4 class="mb-4">Artikel Pilihan</h4>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="featured-card">
+            <!-- menggunakan path gambar yang kamu upload -->
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="featured" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <span class="featured-label">Kesehatan</span>
+            <h3 class="mt-2">Manfaat Jus untuk Kesehatan.</h3>
+            <p class="text-muted">
+              Jus buah dan sayur memiliki banyak manfaat bagi kesehatan karena kaya akan vitamin, mineral, dan antioksidan yang membantu menjaga daya tahan tubuh...
+            </p>
+            <div class="d-flex align-items-center gap-3 mt-3">
+              <div class="text-muted small"><i class="fas fa-user"></i> Arie Jayanthy</div>
+              <div class="text-muted small"><i class="fas fa-calendar"></i> 10 Oktober 2025</div>
+            </div>
+            <div class="mt-3">
+              <a href="#" class="read-more-btn">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All articles grid -->
+    <section class="mb-5">
+      <h4 class="mb-4">Semua Artikel</h4>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- repeat kartu artikel (contoh 6 item) -->
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col">
+          <div class="card card-article">
+            <img src="/mnt/data/Screenshot 2025-11-21 at 17.25.34.png" alt="artikel">
+            <div class="card-body">
+              <div class="title">tips menjaga imun tubuh</div>
+              <div class="excerpt">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dari bahan alami.</div>
+              <a href="#" class="text-decoration-none small text-muted">Website semi e-commerce</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pagination footer -->
+      <div class="page-footer mt-4">
+        Menampilkan 6 dari 6 Artikel
+      </div>
+    </section>
+  </div>
+
+  <!-- Optional: include Bootstrap JS if belum di-include di head/footer -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  -->
+
+
+
+         <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <img src="asset/judul.png" alt="Rie.charge Logo" style="height: 60px; width: auto;" class="align-items-center">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <p class="mb-4">Website semi e-commerce untuk UMKM Rie.charge. Menyediakan produk kesehatan berkualitas dengan bahan alami.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Lihat Lagi</h4>
+                            <a class="btn-link" href="">Blog</a>
+                            <a class="btn-link" href="testimonial.html">Testimoni</a>
+                            <a class="btn-link" href="tentangkami.html">Tentang Kami</a>
+                            <a class="btn-link" href="katalog.html">Katalog</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Shop details</a>
+                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Order History</a>
+                            <a class="btn-link" href="">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Kontak</h4>
+                            <p>Alamat: Perumahan Alam Tirta Lestari, Ciomas, Bogor</p>
+                            <p>Email: Riecharge@bussiness.id</p>
+                            <p>Telepon: 0878-7257-2592</p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="main.js"></script>
+    </body>
+
+</html>
+
