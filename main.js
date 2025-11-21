@@ -503,5 +503,239 @@
         renderTestimonials(currentPage);
     });
 
-})(jQuery);
+// POP-UP PEMESANAN 
+
+    // Ambil elemen-elemen penting
+    const triggerButton = document.getElementById('triggerOrderModal');
+    const quantityInput = document.querySelector('.input-group.quantity input'); // Ambil input jumlah dari detail produk
+    const orderModal = document.getElementById('orderModal');
+    const jumlahUtamaInput = document.getElementById('jumlahUtama');
+    const ringkasanJumlahUtama = document.getElementById('ringkasanJumlahUtama');
+    const totalHargaElement = document.getElementById('totalHarga');
+    
+    // Asumsi harga per unit produk utama (misalnya Orange Sunset)
+    const HARGA_UNIT_UTAMA = 28000; 
+
+    // Fungsi untuk memperbarui ringkasan dan total harga
+    function updateSummary() {
+        //hitung total harga
+        const jumlah = parseInt(jumlahUtamaInput.value) || 0;
+        const total = jumlah * HARGA_UNIT_UTAMA;
+        
+        ringkasanJumlahUtama.textContent = `x${jumlah}`;
+        totalHargaElement.textContent = `Rp${total.toLocaleString('id-ID')}`;
+
+        //tentuin sama perbarui nama produk di ringkasan
+        const selectedVarian = varianUtamaSelect.value || "Produk Pilihan";
+        const selectedCategory = kategoriUtamaSelect.value || "Kategori";
+
+        //elemen ringkasan pesanan
+        document.getElementById('ringkasanProdukUtama').textContent = `${selectedVarian} (${selectedCategory})`;
+    }
+
+    // Mengisi Jumlah Otomatis
+    if (orderModal) {
+    orderModal.addEventListener('show.bs.modal', function (event) {
+        
+        //Ambil Kategori dan Nama Produk dari elemen di halaman detail
+        const currentCategory = productCategoryElement ? productCategoryElement.textContent.trim() : 'Cold-Pressed Juice';
+        const currentProductName = productNameElement ? productNameElement.textContent.trim() : '';
+
+        // Set Kategori Utama di Modal
+        if (kategoriUtamaSelect.querySelector(`option[value="${currentCategory}"]`)) {
+             kategoriUtamaSelect.value = currentCategory;
+        } else {
+             // Jika gagal, set default
+             kategoriUtamaSelect.value = 'Cold-Pressed Juice'; 
+        }
+
+        // Isi Varian Dropdown berdasarkan kategori yang baru diset
+        updateVarianDropdown(kategoriUtamaSelect, varianUtamaSelect); 
+        
+        // Set Varian Utama di Modal ke Nama Produk yang Aktif
+        if (currentProductName && varianUtamaSelect.querySelector(`option[value="${currentProductName}"]`)) {
+            varianUtamaSelect.value = currentProductName;
+        } else {
+            // Jika tidak ada nama produk, biarkan 'Pilih Varian'
+            varianUtamaSelect.value = ''; 
+        }
+
+        // ... (lanjutan untuk Quantity dan Summary)
+        const initialQuantity = parseInt(quantityInput.value) || 1; 
+        jumlahUtamaInput.value = initialQuantity;
+        updateSummary();
+    });
+}
+
+    // Mengatur Tombol Plus/Minus di dalam Modal (Produk Utama)
+    const minusUtama = document.getElementById('minusUtama');
+    const plusUtama = document.getElementById('plusUtama');
+
+    minusUtama.addEventListener('click', () => {
+        let currentValue = parseInt(jumlahUtamaInput.value);
+        if (currentValue > 1) { // Batasi minimal 1
+            jumlahUtamaInput.value = currentValue - 1;
+            updateSummary();
+        }
+    });
+
+    plusUtama.addEventListener('click', () => {
+        let currentValue = parseInt(jumlahUtamaInput.value);
+        jumlahUtamaInput.value = currentValue + 1;
+        updateSummary();
+    });
+
+    // Perbarui summary saat pengguna mengetik di input jumlah utama
+    jumlahUtamaInput.addEventListener('input', updateSummary);
+
+
+    // Logika Produk Tambahan (Opsional)
+    const kategoriTambahan = document.getElementById('kategoriTambahan');
+    const varianTambahan = document.getElementById('varianTambahan');
+    const jumlahTambahan = document.getElementById('jumlahTambahan');
+    const minusTambahan = document.getElementById('minusTambahan');
+    const plusTambahan = document.getElementById('plusTambahan');
+
+    kategoriTambahan.addEventListener('change', function() {
+        const isEnabled = this.value !== "";
+        varianTambahan.disabled = !isEnabled;
+        jumlahTambahan.disabled = !isEnabled;
+        minusTambahan.disabled = !isEnabled;
+        plusTambahan.disabled = !isEnabled;
+
+        if (!isEnabled) {
+            jumlahTambahan.value = 0; // Reset jumlah jika dinonaktifkan
+        } else {
+            jumlahTambahan.value = 1; // Set ke 1 jika kategori dipilih
+        }
+    });
+    
+    minusTambahan.addEventListener('click', () => {
+        let currentValue = parseInt(jumlahTambahan.value);
+        if (currentValue > 0) {
+            jumlahTambahan.value = currentValue - 1;
+        }
+    });
+
+    plusTambahan.addEventListener('click', () => {
+        let currentValue = parseInt(jumlahTambahan.value);
+        jumlahTambahan.value = currentValue + 1;
+    });
+
+
+    // Mengatur Tanggal Pengiriman (Contoh: tidak boleh tanggal yang sudah lewat)
+    document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('tanggalPengiriman').setAttribute('min', today);
+    });
+
+    // Logika Submit Form
+    document.getElementById('pemesananForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Contoh: Membuat link WhatsApp
+        const nama = document.getElementById('namaLengkap').value;
+        const alamat = document.getElementById('alamatPengiriman').value;
+        const wa = document.getElementById('nomorWhatsapp').value;
+        const tanggalKirim = document.getElementById('tanggalPengiriman').value;
+        
+        const produkUtama = document.getElementById('ringkasanProdukUtama').textContent;
+        const varianUtamaVal = document.getElementById('varianUtama').value;
+        const jumlahUtamaVal = document.getElementById('jumlahUtama').value;
+        const total = totalHargaElement.textContent;
+        
+        let pesan = `Halo, saya ingin pesan:\n\n*Pesanan Utama:*\n- ${produkUtama} (Varian: ${varianUtamaVal})\n- Jumlah: ${jumlahUtamaVal} pcs\n\n*Data Pelanggan:*\n- Nama: ${nama}\n- Alamat: ${alamat}\n- Tanggal Kirim: ${tanggalKirim}\n\n*Total:* ${total}`;
+
+        if (kategoriTambahan.value !== "") {
+             const varianTambahanVal = document.getElementById('varianTambahan').value;
+             const jumlahTambahanVal = document.getElementById('jumlahTambahan').value;
+             const noteTambahanVal = document.getElementById('noteTambahan').value;
+             
+             pesan += `\n\n*Pesanan Tambahan:*\n- Kategori: ${kategoriTambahan.value}\n- Varian: ${varianTambahanVal}\n- Jumlah: ${jumlahTambahanVal} pcs\n- Catatan: ${noteTambahanVal}`;
+        }
+
+        // Encode pesan untuk URL
+        const waLink = `https://wa.me/6285891183711?text=${encodeURIComponent(pesan)}`; // Ganti nomor WA dengan nomor Anda
+        
+        alert(`Pesanan akan dialihkan ke WhatsApp:\n${pesan}`);
+        window.open(waLink, '_blank');
+        
+        // Tutup modal
+        const modalInstance = bootstrap.Modal.getInstance(orderModal);
+        modalInstance.hide();
+    });
+
+ 
+    //Data Produk untuk Dropdown Dinamis
+    const productNameElement = document.getElementById('product-name');
+    const productCategoryElement = document.getElementById('product-category');
+
+    const PRODUCT_DATA = {
+        "Cold-Pressed Juice": ["Orange Sunset", "Red Moon", "Yellow Sunrise", "Red Earth", "Celery Quake", "Rain Forest"],
+        "Fitshot": ["Yellow Turmeric", "Ginger Shot", "Immune Booster"],
+        "Asinan": ["Kuah Lemon", "Kuah Pedas Original", "Asinan Buah & Sayur"],
+        "Hampers": ["Paket Sehat A", "Paket Premium B"],
+    };
+
+    //Elemen Form yang Relevan
+    const kategoriUtamaSelect = document.getElementById('kategoriUtama');
+    const varianUtamaSelect = document.getElementById('varianUtama');
+    const kategoriTambahanSelect = document.getElementById('kategoriTambahan');
+    const varianTambahanSelect = document.getElementById('varianTambahan');
+
+    //Fungsi Utama untuk Mengisi Dropdown Varian
+    function updateVarianDropdown(kategoriElement, varianElement) {
+        // Ambil nilai kategori yang dipilih
+        const selectedCategory = kategoriElement.value;
+        
+        // Kosongkan dropdown varian
+        varianElement.innerHTML = '<option value="">Pilih Varian</option>';
+        
+        // Jika kategori dipilih, isi varian
+        if (selectedCategory && PRODUCT_DATA[selectedCategory]) {
+            const varians = PRODUCT_DATA[selectedCategory];
+            varians.forEach(varian => {
+                const option = document.createElement('option');
+                option.value = varian;
+                option.textContent = varian;
+                varianElement.appendChild(option);
+            });
+            varianElement.disabled = false;
+        } else {
+            varianElement.disabled = true;
+        }
+    }
+
+    //Event Listeners untuk Kategori Utama 
+    kategoriUtamaSelect.addEventListener('change', () => {
+        updateVarianDropdown(kategoriUtamaSelect, varianUtamaSelect);
+        // Setelah kategori berubah, kita harus menghitung ulang summary jika harga tergantung varian.
+        // updateSummary(); 
+    });
+
+    // Event Listeners untuk Kategori Tambahan
+    kategoriTambahanSelect.addEventListener('change', function() {
+        // Panggil fungsi utama untuk mengisi dropdown varian tambahan
+        updateVarianDropdown(kategoriTambahanSelect, varianTambahanSelect);
+
+        // Logika untuk mengaktifkan/menonaktifkan input lain (Jumlah)
+        const isCategorySelected = this.value !== "";
+        jumlahTambahan.disabled = !isCategorySelected;
+        minusTambahan.disabled = !isCategorySelected;
+        plusTambahan.disabled = !isCategorySelected;
+
+        if (!isCategorySelected) {
+            jumlahTambahan.value = 0; // Reset jumlah jika dinonaktifkan
+        } else {
+            jumlahTambahan.value = 1; // Set ke 1 jika kategori dipilih
+        }
+    });
+})
+
+
+
+
+
+(jQuery);
+    
 
